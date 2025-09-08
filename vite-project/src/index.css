@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background-primary: #f8fafc;
+  --background-secondary: #f1f5f9;
+  --card-background: rgba(255, 255, 255, 0.8);
+  --border-color: #e2e8f0;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --primary-dark: #1d3557;
+  --primary: #457b9d;
+  --secondary: #a8dadc;
+  --accent: #e63946;
+  --success: #2a9d8f;
+  --background-start: #e8f4f8;
+  --background-end: #d1e8e2;
+  --card-border: rgba(168, 218, 220, 0.3);
+}
