@@ -61,7 +61,7 @@ const LoginPage = () => {
             <div 
                 className="absolute inset-0 z-0" 
                 style={{
-                    backgroundImage: "url('/src/utils/task-management-home.jpg')",
+                    backgroundImage: "url('/task-management-home.jpg')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
