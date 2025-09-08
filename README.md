@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MP-Dashboard: Task Management System
 
 ## Overview
@@ -195,3 +196,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Socket.io](https://socket.io/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Material UI](https://mui.com/)
+=======
+# Task-Management-System
+This project is a role-based project management web application designed to streamline collaboration and task tracking within a team environment. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), the system offers dedicated dashboards for Managers, Employees, and Clients, each tailored to their responsibilities and access levels.
+>>>>>>> a3400f5dbef12dd8d0944d62acf285ce6689e4a4
