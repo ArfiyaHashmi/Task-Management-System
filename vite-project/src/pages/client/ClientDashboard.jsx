@@ -18,7 +18,7 @@ const ClientDashboard = () => {
             const token = localStorage.getItem('token');
             console.log('Token:', token); // Debug log
 
-            const response = await fetch('http://localhost:5000/api/tasks/client-tasks', {
+            const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/tasks/client-tasks`, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'

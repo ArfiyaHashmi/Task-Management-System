@@ -41,7 +41,7 @@ const ManagerDashboard = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/tasks');
+            const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/tasks`);
             const data = await response.json();
             setTasks(data);
         } catch (error) {
@@ -51,7 +51,7 @@ const ManagerDashboard = () => {
 
     const fetchClients = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/auth/clients');
+            const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/auth/clients`);
             if (!response.ok) throw new Error('Failed to fetch clients');
             const data = await response.json();
             setClients(data);
@@ -68,7 +68,7 @@ const ManagerDashboard = () => {
             // Add console.log to check token
             console.log('Token:', token);
             
-            const response = await fetch('http://localhost:5000/api/auth/employees', {
+            const response = await fetch(`${import.meta.env.VITE_API_BASE}/api/auth/employees`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,

@@ -93,7 +93,7 @@ export const ChatProvider = ({ children }) => {
   // Initialize socket connection when authenticated
   useEffect(() => {
     if (isAuthenticated && user) {
-      const socket = io('http://localhost:5000');
+      const socket = io(import.meta.env.VITE_API_BASE);
       
       socket.on('connect', () => {
         console.log('Socket connected:', socket.id);
